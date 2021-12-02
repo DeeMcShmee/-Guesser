@@ -14,9 +14,8 @@ const humanDiff = Math.abs(targetNum - humanGuess);
 const computerDiff = Math.abs(targetNum - computerGuess);
 
 return humanDiff <= computerDiff
-
 };
-
+// Updating scores
 const updateScore = (string) => {
   switch (string) {
     case 'human':
@@ -27,6 +26,7 @@ const updateScore = (string) => {
     break;
   }
 }
+// Next round
 const advanceRound = () => {
   currentRoundNumber = currentRoundNumber + 1
 }
